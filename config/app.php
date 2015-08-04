@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -140,10 +140,14 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Cinema\Providers\AppServiceProvider::class,
+        Cinema\Providers\EventServiceProvider::class,
+        Cinema\Providers\RouteServiceProvider::class,
 
+        /**
+         * Vendors
+         */
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -192,6 +196,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        /**
+         * Vendors
+         */
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

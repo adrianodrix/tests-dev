@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => App\User::class,
+        'model'  => Cinema\User::class,
         'key'    => '',
         'secret' => '',
     ],
