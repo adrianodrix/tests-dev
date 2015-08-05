@@ -38,9 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Laravel 5.1</div>
                 <h3>{{ Inspiring::quote() }}</h3>
-                <h2>{{ $user->name }}</h2>
             </div>
         </div>
     </body>

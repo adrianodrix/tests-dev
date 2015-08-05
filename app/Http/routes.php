@@ -12,8 +12,7 @@
 */
 
 Route::get('/', function () {
-	$user = \App\User::find(1);
-    return view('welcome', compact('user'));
+    return view('welcome');
 });
 
 Route::get('/info', function(){
