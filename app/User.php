@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace ChatApp;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -32,4 +32,14 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    public function chatRooms()
+    {
+        $this->hasMany(ChatRoom::class);
+    }
+
+    public function messages()
+    {
+        $this->hasMany(Message::class);
+    }
 }

@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => App\User::class,
+        'model'  => ChatApp\User::class,
         'key'    => '',
         'secret' => '',
     ],
